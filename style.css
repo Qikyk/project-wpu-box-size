@@ -1,81 +1,126 @@
+/* reset */
 * {
+  box-sizing: border-box;
   margin: 0;
   padding: 0;
   font-family: Sans-Serif, Arial;
 }
+/* end reset */
 
 body {
-  box-sizing: border-box;
   background-color: #eaeaea;
 }
 
 .container {
-  width: 800px;
+  width: 960px;
   margin: auto;
   background-color: #fff;
 }
 
+/* navbar and header */
 header h1 {
-  font-size: 40px;
-  padding: 20px;
+  padding: 10px;
 }
 
 nav ul li {
   display: inline-block;
-  margin-left: 20px;
-  margin-bottom: 15px;
+  margin-bottom: 0.7em;
+  margin-right: 1em;
+}
+
+nav ul li:nth-child(1) {
+  margin-left: 10px;
 }
 
 nav ul li a {
-  text-decoration: none;
   color: salmon;
-  padding: 5px;
+  text-decoration: none;
+  padding: 4px;
 }
 
 nav ul li a:hover {
-  color: #333;
+  border-radius: 0.5em;
+  border-right: 10px;
+  color: #000;
   background-color: skyblue;
-  border-radius: 6px;
 }
+/* end navbar and header */
 
+/* hero */
 .hero {
-  height: 280px;
+  height: 320px;
   background-image: url("img/hero.jpeg");
   background-size: cover;
-  background-position: 0 -30px;
-  border-bottom: solid 3px skyblue;
+  background-position: 0 -60px;
   border-top: solid 3px salmon;
+  border-bottom: solid 3px skyblue;
+}
+/* end hero */
+
+/* content */
+.main {
+  width: 600px;
+  padding: 20px;
+  box-sizing: border-box;
+  float: left;
 }
 
-.content {
-}
-
-.content header h2 {
+.main header h2 {
+  margin-top: 1em;
+  margin-left: 20px;
   font-size: 25px;
-  margin-top: 18px;
-  margin-left: 20px;
-  margin-bottom: 4px;
 }
 
-.content header p {
+.main header p {
   margin-left: 20px;
-  font-size: 13px;
+  font-size: 10px;
 }
 
-.content header p span a {
+.main header a {
+  text-decoration: none;
+  color: salmon;
+}
+
+.main .paragraf p {
+  margin: 7px 20px;
+  font-size: 15px;
+}
+/* end content */
+
+/* sidebar */
+.sidebar {
+  padding: 2.9em;
+}
+
+.sidebar img {
+  width: 100px;
+  float: left;
+  padding: 10px;
+}
+
+.sidebar h3 {
+  font: 20px bold;
+}
+
+.sidebar p {
+  font: 15px/20px bold;
+}
+
+.clear {
+  clear: both;
+}
+/* end sidebar */
+
+/* footer */
+footer p {
+  padding: 7px;
+  text-align: center;
+  color: #fff;
+  background-color: #000;
+}
+
+footer p a {
   color: salmon;
   text-decoration: none;
 }
-
-.content p {
-  margin: 5px 20px;
-  font-size: 15px;
-}
-
-footer {
-  margin-top: 10px;
-  padding: 10px;
-  background-color: black;
-  color: white;
-  text-align: center;
-}
+/* end footer */
